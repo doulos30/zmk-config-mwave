@@ -12,7 +12,7 @@
         Win_Cut: Windows_Cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(F4)>;
+            bindings = <&kp LA(C)>;
             display-name = "Windows Cut";
         };
 
@@ -125,80 +125,70 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(F4)>;
-            display-name = "Windows Cut";
-            label = "WIN_CLOSE_PROGRAM";
+            display-name = "Windows Close";
         };
 
         Win_Settings_Menu: Win_Settings_Menu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(I)>;
-            display-name = "Windows Explorer";
-            label = "WIN_SETTINGS_MENU";
+            display-name = "Windows Settings";
         };
 
         Win_Lock_PC: Win_Lock_PC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(L)>;
-            display-name = "Windows Explorer";
-            label = "WIN_LOCK_PC";
+            display-name = "Windows Lock";
         };
 
-        Win_Tile_Left: Win_Tile_Up {
+        Win_Tile_Left: Win_Tile_Left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LEFT)>;
-            display-name = "Windows Explorer";
-            label = "WIN_TILE_UP";
+            display-name = "Windows Tile Left";
         };
 
         Win_Tile_Up: Win_Tile_Up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(UP_ARROW)>;
-            display-name = "Windows Explorer";
-            label = "WIN_TILE_UP";
+            display-name = "Windows Tile Up";
         };
 
         Win_Tile_Down: Win_Tile_Down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(DOWN)>;
-            display-name = "Windows Explorer";
-            label = "WIN_TILE_DOWN";
+            display-name = "Windows Tile Down";
         };
 
         Win_Tile_Right: Win_Tile_Right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(RIGHT)>;
-            display-name = "Windows Explorer";
-            label = "WIN_TILE_RIGHT";
+            display-name = "Windows Tile Right";
         };
 
         Mac_Spotlight_Search: Mac_Spotlight_Search {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE)>;
-            display-name = "Windows Show All Windows";
-            label = "MAC_SPOTLIGHT_SEARCH";
+            display-name = "Mac Spotlight Search";
         };
 
         Mac_Close_Program: Mac_Close_Program {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(Q)>;
-            display-name = "Windows Show All Windows";
-            label = "MAC_CLOSE_PROGRAM";
+            display-name = "Mac Close Program";
         };
 
         Mac_Strike_Through_Text: Mac_Strike_Through_Text {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LS(X))>;
-            display-name = "Windows Show All Windows";
-            label = "MAC_STRIKE_THROUGH_TEXT";
+            display-name = "Mac Strikethrough Text";
         };
     };
 
