@@ -96,7 +96,7 @@
         Mac_Undo: Mac_Undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(V)>;
+            bindings = <&kp LG(Z)>;
             display-name = "Mac Undo";
         };
 
