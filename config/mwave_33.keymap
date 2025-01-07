@@ -190,6 +190,13 @@
             bindings = <&kp LG(LS(X))>;
             display-name = "Mac Strikethrough Text";
         };
+
+        Mouse_Double_Click: Mouse_Double_Click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&Mouse_Double_Click>;
+            label = "MOUSE_DOUBLE_CLICK";
+        };
     };
 
     macros {
