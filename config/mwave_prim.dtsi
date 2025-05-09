@@ -48,8 +48,8 @@ behaviors {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <5000>;
-        bindings = <&none>, <&bt_clear>;
+        tapping-term-ms = <3000>;
+        bindings = <&bt_clear>, <&none>;
         display-name = "BT-hold-clear";
     };
 };
