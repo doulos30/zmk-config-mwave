@@ -60,4 +60,4 @@ behaviors {
         bindings = <&kp LC(LS(LA(LGUI)))>;
         display-name = "Hyper Key";
     };
-}
+};
