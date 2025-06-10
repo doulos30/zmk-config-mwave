@@ -12,6 +12,38 @@
 / {
     #include "mwave_prim.dtsi"
 
+       // Define custom behaviors right in your keymap
+    behaviors {
+        // Hyper key implementation
+        hypr: hyper_key {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(LA(LGUI)))>, <&none>;
+        };
+
+        // Improved mod-tap timing behavior
+        mt_custom: mod_tap_improved {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;    // Faster response time
+            quick-tap-ms = <150>;       // For repeating tapped key
+            global-quick-tap;           // Enable quick tap globally
+            bindings = <&kp>, <&kp>;
+        };
+        
+        // Home row mods with balanced timing
+        hm: home_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;    // Slightly longer for home row
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
