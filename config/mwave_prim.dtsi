@@ -62,7 +62,7 @@ behaviors {
     };
 
     // Home row mods - start with just this definition
-    hm: home_row_mods {
+    hrm: home_row_mods {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "balanced";
@@ -73,4 +73,24 @@ behaviors {
         display-name = "Home Row Mods";
     };
 
+}; 
+
+// Add after your existing behaviors section:
+
+combos {
+    compatible = "zmk,combos";
+    
+    // Example: ESC when Q and W are pressed together
+    combo_esc {
+        timeout-ms = <50>;
+        key-positions = <32 33>;  // Q and W keys
+        bindings = <&kp ESC>;
+    };
+    
+    // Example: Enter when J and K are pressed together
+    combo_enter {
+        timeout-ms = <50>;
+        key-positions = <53 54>;  // J and K keys
+        bindings = <&kp ENTER>;
+    };
 };
