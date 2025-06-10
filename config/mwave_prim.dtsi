@@ -52,4 +52,12 @@ behaviors {
         bindings = <&bt_clear>, <&none>;
         display-name = "BT-hold-clear";
     };
-};
+    
+    // Add just this one simple behavior definition
+    hypr: hyper_key {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LC(LS(LA(LGUI)))>;
+        display-name = "Hyper Key";
+    };
+}
