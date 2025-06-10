@@ -41,12 +41,12 @@
         raise {
             display-name = "Fn";
             bindings = <
-&kp ESCAPE      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_PP  &kp C_NEXT  &bl BL_CYCLE  &kp LG(D)  &kp LS(LG(S))  &kp LG(TAB)      &kp LG(S)        &bth 0 0  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp KP_NUMLOCK  &to 0
-&none           &none       &none         &none         &none       &none     &none       &none         &none      &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS        &kp EQUAL   &kp BACKSPACE
-&kp TAB         &none       &none         &none         &none       &none     &none       &kp KP_N7     &kp KP_N8  &kp KP_N9      &kp KP_MINUS     &none            &none       &none           &kp DELETE
-&studio_unlock  &none       &none         &none         &none       &none     &none       &kp KP_N4     &kp KP_N5  &kp KP_N6      &kp KP_PLUS      &none            &kp ENTER   &kp PAGE_UP
-&kp LEFT_SHIFT  &none       &none         &none         &macro_ver  &none     &none       &kp KP_N1     &kp KP_N2  &kp KP_N3      &kp KP_ENTER     &kp RIGHT_SHIFT  &kp UP      &kp PAGE_DOWN
-&none           &none       &none         &kp SPACE     &kp KP_N0   &none     &kp KP_DOT  &none         &kp LEFT   &kp DOWN       &kp RIGHT
+&none     &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_PP  &kp C_NEXT  &bl BL_CYCLE  &kp LG(D)  &kp LS(LG(S))  &kp LG(TAB)      &kp LG(S)        &bth 0 0     &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp KP_NUMLOCK  &to 0
+&none     &none       &none       &none         &none        &none      &none       &none         &none       &none          &none            &none            &none       &none
+&none     &none       &none       &none         &none        &none      &none       &none         &none       &none          &none            &none            &none       &none           &none
+&studio_unlock        &none       &none         &none        &none      &none       &none         &none       &none          &none            &none            &none       &none           &none
+&none     &none       &none       &none         &macro_ver   &none      &none       &none         &none       &none          &none            &none            &none       &none
+&none                 &none       &none         &none        &none      &none       &none         &none       &none          &none            &none
             >;
         };
 
@@ -63,6 +63,7 @@
         extra3 {
             display-name = "Red";
 
+            // refrence layout of the base layer 
             // -------------------------------------------------------------------------------------------------------
             // | ESC | F1  | F2  | F3  | F4  | F5  | F6  | | F7  | F8  | F9  | F10 | F11 | F12 |HOME| END |PSCN|  1  |
             // |GRAVE|  1  |  2  |  3  |  4  |  5  |  6  | |   7   |  8  |  9  |  0  |  -  |  =  |    BKSP     | DEL |
