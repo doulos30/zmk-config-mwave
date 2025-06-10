@@ -60,4 +60,17 @@ behaviors {
         bindings = <&kp LC(LS(LA(LGUI)))>;
         display-name = "Hyper Key";
     };
+
+    // Home row mods - start with just this definition
+    hm: home_row_mods {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <175>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+        display-name = "Home Row Mods";
+    };
+
 };
