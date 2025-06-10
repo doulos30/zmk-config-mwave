@@ -80,17 +80,60 @@ behaviors {
 combos {
     compatible = "zmk,combos";
     
-    // Example: ESC when Q and W are pressed together
+    // Your existing combos
     combo_esc {
         timeout-ms = <50>;
         key-positions = <32 33>;  // Q and W keys
         bindings = <&kp ESC>;
     };
     
-    // Example: Enter when J and K are pressed together
     combo_enter {
         timeout-ms = <50>;
         key-positions = <53 54>;  // J and K keys
         bindings = <&kp ENTER>;
+    };
+    
+    // New combos to consider
+    
+    // Backspace combo (U+I)
+    combo_bspc {
+        timeout-ms = <50>;
+        key-positions = <38 39>;  // U and I keys
+        bindings = <&kp BSPC>;
+    };
+    
+    // Tab combo (A+S)
+    combo_tab {
+        timeout-ms = <50>;
+        key-positions = <47 48>;  // A and S keys
+        bindings = <&kp TAB>;
+    };
+    
+    // Delete combo (Y+U)
+    combo_del {
+        timeout-ms = <50>;
+        key-positions = <37 38>;  // Y and U keys
+        bindings = <&kp DEL>;
+    };
+    
+    // Caps Lock combo (F+G)
+    combo_caps {
+        timeout-ms = <50>;
+        key-positions = <50 51>;  // F and G keys
+        bindings = <&kp CAPS>;
+    };
+    
+    // Layer activation combo (Z+X)
+    combo_layer {
+        timeout-ms = <50>;
+        key-positions = <61 62>;  // Z and X keys
+        bindings = <&to 1>;  // Switch to layer 1
+    };
+    
+    // Hyper combo (C+V)
+    combo_hyper {
+        timeout-ms = <50>;
+        key-positions = <63 64>;  // C and V keys
+        bindings = <&hypr>;  // Your custom hyper key
     };
 };
