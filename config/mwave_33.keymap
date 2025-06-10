@@ -74,7 +74,7 @@
             >;
         };
            
-};
+
 
         extra4 {
             display-name = "Purple";
