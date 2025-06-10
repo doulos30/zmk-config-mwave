@@ -44,6 +44,7 @@ endpoint_sideband_behaviors {
 };
 
 behaviors {
+    // keep existing behaviors
     bth: bt_hold {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
@@ -51,5 +52,25 @@ behaviors {
         tapping-term-ms = <2000>;
         bindings = <&bt_clear>, <&none>;
         display-name = "BT-hold-clear";
+    };
+
+    // Add your hyper key behavior
+    hypr: hyper_key {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp LC(LS(LA(LGUI)))>, <&none>;
+        display-name = "Hyper Key";
+    };
+
+    // Add home row mods behavior
+    hm: home_row_mods {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <175>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+        display-name = "Home Row Mods";
     };
 };
