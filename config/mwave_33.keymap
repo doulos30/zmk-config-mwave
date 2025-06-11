@@ -38,7 +38,7 @@
             >;
         };
 
-       
+        // windows meida and bluetooth keys 
         raise {
             display-name = "Fn"; 
             bindings = <
@@ -55,7 +55,7 @@
 
         Red {
                     
-            // number pad layer 
+            // number pad layer add left alt to go back to blue layer
             display-name = "Red"; 
             bindings = <
 &none      &none       &none         &none         &none       &none     &none        &none         &none       &none          &none            &none            &none       &none           &none        &kp KP_NUMLOCK   &to 0
