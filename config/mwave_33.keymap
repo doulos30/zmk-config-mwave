@@ -51,17 +51,9 @@
             >;
         };
 
+
+
         extra1 {
-            display-name = "Blue"; // main modified layer fn layer to base layer 
-            status = "reserved";
-        };
-
-        extra2 {
-            display-name = "Green"; toggle modified layer left alt jump to red layer 
-            status = "reserved";
-        };
-
-        extra3 {
                     
             // number pad layer 
             display-name = "Red"; // toggle and locked number layer on keyboard. layer key "fn" to base layer and left alt to jump back to blue layer 
@@ -75,6 +67,16 @@
             >;
         };
            
+
+        extra2 {
+            display-name = "Blue"; // main modified layer fn layer to base layer 
+            status = "reserved";
+        };
+
+        extra3 {
+            display-name = "Green"; toggle modified layer left alt jump to red layer 
+            status = "reserved";
+        };
 
 
         extra4 {
