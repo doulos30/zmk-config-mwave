@@ -12,12 +12,11 @@
 / {
     #include "mwave_prim.dtsi"
 
-  
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Base"; // default layer 
+            display-name = "Base";
 
             // -------------------------------------------------------------------------------------------------------
             // | ESC | F1  | F2  | F3  | F4  | F5  | F6  | | F7  | F8  | F9  | F10 | F11 | F12 |HOME| END |PSCN|  1  |
@@ -29,53 +28,41 @@
             // -------------------------------------------------------------------------------------------------------
 
             bindings = <
-&kp ESC    &kp F1    &kp F2    &kp F3     &kp F4     &kp F5    &kp F6           &kp F7     &kp F8     &kp F9    &kp F10    &kp F11    &kp F12    &kp HOME   &kp END  &kp INSERT  &to 1
-&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6           &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS  &kp EQUAL  &kp BSPC
-&kp TAB    &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y            &kp U      &kp I      &kp O     &kp P      &kp LBKT   &kp RBKT   &kp BSLH   &kp DEL
-&kp CLCK   &kp A     &kp S     &kp D      &kp F      &kp G     &kp H            &kp J      &kp K      &kp L     &kp SEMI   &kp SQT    &kp RET    &kp PG_UP
-&kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N            &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &kp UP     &kp PG_DN
-&kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE  &kp SPACE  &kp RALT  &kp K_CMENU      &kp RCTRL  &kp LEFT   &kp DOWN  &kp RIGHT
+&kp ESC    &kp F1    &kp F2    &kp F3     &kp F4     &kp F5    &kp F6       &kp F7     &kp F8     &kp F9    &kp F10    &kp F11    &kp F12    &kp HOME   &kp END  &kp INSERT  &to 1
+&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS  &kp EQUAL  &kp BSPC
+&kp TAB    &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y        &kp U      &kp I      &kp O     &kp P      &kp LBKT   &kp RBKT   &kp BSLH   &kp DEL
+&kp CLCK   &kp A     &kp S     &kp D      &kp F      &kp G     &kp H        &kp J      &kp K      &kp L     &kp SEMI   &kp SQT    &kp RET    &kp PG_UP
+&kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N        &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &kp UP     &kp PG_DN
+&kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE  &kp SPACE  &kp RALT  &kp K_CMENU  &kp RCTRL  &kp LEFT   &kp DOWN  &kp RIGHT
             >;
         };
 
-       
         raise {
-            display-name = "Fn"; // media and bluetoot fn layer key to base layer pgup to blue layer   
+            display-name = "Fn";
             bindings = <
-&kp ESCAPE      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_PP   &kp C_NEXT        &bl BL_CYCLE  &kp LG(D)  &kp LS(LG(S))  &kp LG(TAB)      &kp LG(S)         &bth 0 0    &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp KP_NUMLOCK  &to 0
-&none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none
-&none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none           &none
-&studio_unlock              &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none           &none
-&none           &none       &none         &none         &macro_ver    &none      &none             &none         &none       &none          &none            &none            &none       &none
-&none                       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none
+&kp ESCAPE      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_PP  &kp C_NEXT  &bl BL_CYCLE  &kp LG(D)  &kp LS(LG(S))  &kp LG(TAB)      &kp LG(S)        &bt BT_CLR  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp KP_NUMLOCK  &to 0
+&none           &none       &none         &none         &none       &none     &none       &none         &none      &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS        &kp EQUAL   &kp BACKSPACE
+&kp TAB         &none       &none         &none         &none       &none     &none       &kp KP_N7     &kp KP_N8  &kp KP_N9      &kp KP_MINUS     &none            &none       &none           &kp DELETE
+&studio_unlock  &none       &none         &none         &none       &none     &none       &kp KP_N4     &kp KP_N5  &kp KP_N6      &kp KP_PLUS      &none            &kp ENTER   &kp PAGE_UP
+&kp LEFT_SHIFT  &none       &none         &none         &macro_ver  &none     &none       &kp KP_N1     &kp KP_N2  &kp KP_N3      &kp KP_ENTER     &kp RIGHT_SHIFT  &kp UP      &kp PAGE_DOWN
+&none           &none       &none         &kp SPACE     &kp KP_N0   &none     &kp KP_DOT  &none         &kp LEFT   &kp DOWN       &kp RIGHT
             >;
         };
 
         extra1 {
-            display-name = "Blue"; // main modified layer fn layer to base layer 
+            display-name = "Blue";
             status = "reserved";
         };
 
         extra2 {
-            display-name = "Green"; toggle modified layer left alt jump to red layer 
+            display-name = "Green";
             status = "reserved";
         };
 
         extra3 {
-                    
-            // number pad layer 
-            display-name = "Red"; // toggle and locked number layer on keyboard. layer key "fn" to base layer and left alt to jump back to blue layer 
-            bindings = <
-&none      &none       &none         &none         &none       &none     &none        &none         &none       &none          &none            &none            &none       &none           &none        &kp KP_NUMLOCK   &to 0
-&none      &none       &none         &none         &none       &none     &none        &none         &none       &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS        &kp EQUAL   &kp BACKSPACE
-&none      &none       &none         &none         &none       &none     &none        &kp KP_N7     &kp KP_N8   &kp KP_N9      &kp KP_MINUS     &none            &none       &none           &kp DELETE
-&none      &none       &none         &none         &none       &none     &none        &kp KP_N4     &kp KP_N5   &kp KP_N6      &kp KP_PLUS      &none            &kp ENTER   &kp PAGE_UP
-&none      &none       &none         &none         &none       &none     &none        &kp KP_N1     &kp KP_N2   &kp KP_N3      &kp KP_ENTER     &kp RIGHT_SHIFT  &kp UP      &kp PAGE_DOWN
-&none      &none       &none         &none         &kp KP_N0   &none     &kp KP_DOT   &none         &none       &none          &none 
-            >;
+            display-name = "Red";
+            status = "reserved";
         };
-           
-
 
         extra4 {
             display-name = "Purple";
