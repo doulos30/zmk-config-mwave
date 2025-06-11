@@ -70,7 +70,14 @@
 
         extra2 {
             display-name = "Blue"; 
-            status = "reserved";
+            bindings = <
+&none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none           &none    &none     &to 0
+&none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none
+&none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none           &none
+&none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none
+&none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none
+&none                       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none
+            >;
         };
 
         extra3 {
