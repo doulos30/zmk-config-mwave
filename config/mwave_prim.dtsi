@@ -73,6 +73,41 @@ behaviors {
         display-name = "Home Row Mods";
     };
 
+    // Fast home row mods (for frequently accessed modifiers)
+    fhrm: fast_home_row_mods {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <150>;  // Shorter tapping term for faster activation
+        quick-tap-ms = <150>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+        display-name = "Fast Home Row Mods";
+    };
+
+    // Slow home row mods (for modifiers you don't want to trigger accidentally)
+    shrm: slow_home_row_mods {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";  // More biased toward tapping
+        tapping-term-ms = <250>;   // Longer tapping term for more deliberate holds
+        quick-tap-ms = <200>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+        display-name = "Slow Home Row Mods";
+    };
+
+    // Action home row mods (for non-modifier actions like Tab and Enter)
+    ahrm: action_home_row_mods {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";  // Better for action keys
+        tapping-term-ms = <200>;
+        quick-tap-ms = <175>;
+        bindings = <&kp>, <&kp>;
+        display-name = "Action Home Row Mods";
+    };
+
 }; 
 
 // Add after your existing behaviors section:

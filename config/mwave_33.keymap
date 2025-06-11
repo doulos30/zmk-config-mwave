@@ -76,7 +76,7 @@
 &none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none           &none
 &none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none
 &none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none
-&none                       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none
+&kp CLCK                    &none         &none         &none         &none      &none             &none         &none       &none          &none            &none
             >;
         };
 
