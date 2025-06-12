@@ -7,12 +7,11 @@
 #include <dt-bindings/advertising_mode.h>
 #include <behaviors/advertising_mode.dtsi>
 #include <behaviors/stp_indicators.dtsi>
-//#include "studio-macros.dtsi"
+#include "studio-macros.dtsi"
 
 / {
     #include "mwave_prim.dtsi"
-    #include "studio-macros.dtsi"
-
+ 
   
     keymap {
         compatible = "zmk,keymap";
