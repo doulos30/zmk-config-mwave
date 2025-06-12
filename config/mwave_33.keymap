@@ -43,7 +43,7 @@
         raise {
             display-name = "Fn"; 
             bindings = <
-&kp ESCAPE      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_PP   &kp C_NEXT        &bl BL_CYCLE  &kp LG(D)  &kp LS(LG(S))  &kp LG(TAB)      &kp LG(S)         &bth 0 0    &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp KP_NUMLOCK  &to 0
+&kp ESCAPE      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_PP   &kp C_NEXT        &bl BL_CYCLE  &kp LG(D)   &kp LS(LG(S))  &kp LG(TAB)      &kp LG(S)        &bth 0 0    &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp KP_NUMLOCK  &to 0
 &none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none
 &none           &none       &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none           &none
 &studio_unlock              &none         &none         &none         &none      &none             &none         &none       &none          &none            &none            &none       &none           &to 3
@@ -54,7 +54,7 @@
 
 
 
-        Red {
+        extra1 {
             // number pad layer add left alt to go back to blue layer
             display-name = "Red"; 
             bindings = <
