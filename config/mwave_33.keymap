@@ -56,7 +56,7 @@
 
         extra1 {
             // number pad layer add left alt to go back to blue layer
-            display-name = "Red"; // LAYER 2    
+            display-name = "Num"; // LAYER 2    
             bindings = <
 &none      &none       &none         &none         &none       &none     &none        &none         &none       &none          &none            &none            &none       &none           &none        &kp KP_NUMLOCK   &to 0
 &none      &none       &none         &none         &none       &none     &none        &none         &none       &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS        &kp EQUAL   &kp BACKSPACE
@@ -69,7 +69,7 @@
            
 
         extra2 {
-            display-name = "Blue"; // LAYER 3
+            display-name = "Mod"; // LAYER 3
             bindings = <
 &none           &none           &none         &none         &none               &none           &none             &none         &none       &none               &none            &none            &none       &none           &none    &none     &to 0   // 17
 &none           &none           &none         &none         &none               &none           &none             &none         &none       &none               &none            &none            &none       &none                                      // 14
@@ -81,13 +81,13 @@
         };
 
         extra3 {
-            display-name = "Green"; // LAYER 4
+            display-name = "Macro"; // LAYER 4
             bindings = <
 &none      &kp F1       &kp F2       &kp F3        &kp F4       &kp F5       &kp F6             &kp F7       &kp F8       &kp F9       &kp F10                   &kp F11                   &Send_Zmk         &none        &kp LG(L)          &none      &to 0       // 17
 &none      &kp F13      &kp F14      &kp F15       &kp F16      &kp F17      &kp F18            &kp F19      &kp F20      &kp F21      &kp F22                   &kp F23                   &kp F24           &none                                                // 14
 &kp DEL    &kp Q        &kp UP       &kp E         &kp PG_UP    &none        &none              &none        &none        &none        &none                     &none                     &none             &none        &none                                   // 15
 &kp BSPC   &kp LEFT     &kp DOWN     &kp RIGHT     &kp PG_DN    &none        &none              &none        &none        &none        &none                     &none                     &none             &none                                                // 14
-&kp LSHFT  &kp LC(A)    &kp LC(X)    &kp LC(C)     &kp LC(V)    &none        &trans             &trans       &none        &none        &none                     &none                     &none             &none                                                // 14
+&kp LSHFT  &kp LC(A)    &kp LC(X)    &kp LC(C)     &kp LC(V)    &none        &none              &none       &none        &none        &none                     &none                     &none             &none                                                // 14
 &none      &none        &to 2        &kp DELETE    &none        &kp DEL      &kp BSPC           &none        &none        &none        &none                                                                                                                      // 11
             >;
         };
