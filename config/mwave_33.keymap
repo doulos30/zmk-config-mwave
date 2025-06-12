@@ -38,6 +38,7 @@
             >;
         };
 
+        
         // windows meida and bluetooth keys 
         raise {
             display-name = "Fn"; 
@@ -54,7 +55,6 @@
 
 
         Red {
-                    
             // number pad layer add left alt to go back to blue layer
             display-name = "Red"; 
             bindings = <
@@ -74,7 +74,7 @@
 &none           &none           &none         &none         &none               &none           &none             &none         &none       &none               &none            &none            &none       &none           &none    &none     &to 0  // 17
 &none           &none           &none         &none         &none               &none           &none             &none         &none       &none               &none            &none            &none       &none                                     // 14
 &kp GRAVE       &kp Q           &kp W         &kp E         &kp R               &kp T           &kp Y             &kp U         &kp I       &kp O               &kp P            &kp LBKT         &kp RBKT    &none           &none                     // 15
-&ESC            &hrm LCTRL A    &hrm LSHFT S  &hrm LALT D   &hrm TAB F          &lt 2 G         &lt 2 H           &ahrm RET J   &kp K       &hrm RSHFT L        &kp SEMI         &kp SQT          &kp RET     &none                                     // 14   
+&kp ESC         &hrm LCTRL A    &hrm LSHFT S  &hrm LALT D   &hrm TAB F          &lt 2 G         &lt 2 H           &ahrm RET J   &kp K       &hrm RSHFT L        &kp SEMI         &kp SQT          &kp RET     &none                                     // 14   
 &none           &hrm LGUI Z     &kp X         &kp C         &kp V               &lt 4 B         &lt 4 N           &kp M         &kp COMMA   &hrm K_CMENU DOT    &kp FSLH         &kp BSLH         &none       &none                                     // 14
 &kp CLCK                        &none         &none         &ahrm RET SPACE     &kp SPACE       &none             &none         &none       &none               &none            &none                                                                  // 11
             >;
