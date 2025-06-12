@@ -195,7 +195,7 @@
             display-name = "Double Click";
         };
 
-        // add git add. git commit -, and git push macros 
+        
         
         Git_Add_All: Git_Add_All {
             compatible = "zmk,behavior-macro";
