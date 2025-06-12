@@ -111,7 +111,6 @@ behaviors {
 
 }; 
 
-// Add after your existing behaviors section:
 
 combos {
     compatible = "zmk,combos";
