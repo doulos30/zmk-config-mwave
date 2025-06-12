@@ -199,7 +199,7 @@
         
         Git_Add_All: Git_Add_All {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             wait-ms = <30>;
             tap-ms = <30>;
             bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE &kp DOT &kp ENTER>;
@@ -208,7 +208,7 @@
 
         Git_Commit: Git_Commit {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             wait-ms = <30>;
             tap-ms = <30>;
             bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp M &kp SPACE &kp DQT &kp DQT &kp LEFT>;
@@ -218,7 +218,7 @@
 
         Git_Push: Git_Push {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             wait-ms = <30>;
             tap-ms = <30>;
             bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp ENTER>;
