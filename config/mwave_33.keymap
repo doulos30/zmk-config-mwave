@@ -29,12 +29,12 @@
             // -------------------------------------------------------------------------------------------------------
 
             bindings = <
-&kp ESC    &kp F1    &kp F2    &kp F3     &kp F4     &kp F5    &kp F6           &kp F7     &kp F8     &kp F9    &kp F10    &kp F11    &kp F12    &kp HOME   &kp END  &kp INSERT  &to 1 // 17
-&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6           &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS  &kp EQUAL  &kp BSPC                              // 14
-&kp TAB    &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y            &kp U      &kp I      &kp O     &kp P      &kp LBKT   &kp RBKT   &kp BSLH   &kp DEL                    // 15
-&kp CLCK   &kp A     &kp S     &kp D      &kp F      &kp G     &kp H            &kp J      &kp K      &kp L     &kp SEMI   &kp SQT    &kp RET    &kp PG_UP                             // 14
-&kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N            &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &kp UP     &kp PG_DN                             // 14 
-&kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE  &kp SPACE  &kp RALT  &kp K_CMENU      &kp RCTRL  &kp LEFT   &kp DOWN  &kp RIGHT                                                              // 11
+&kp ESC    &kp F1    &kp F2    &kp F3     &kp F4     &kp F5    &kp F6           &kp F7     &kp F8     &kp F9    &kp F10    &kp F11    &kp F12    &kp HOME   &kp END  &kp INSERT  &to 1  // 17
+&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6           &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS  &kp EQUAL  &kp BSPC                               // 14
+&kp TAB    &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y            &kp U      &kp I      &kp O     &kp P      &kp LBKT   &kp RBKT   &kp BSLH   &kp DEL                     // 15
+&kp CLCK   &kp A     &kp S     &kp D      &kp F      &kp G     &kp H            &kp J      &kp K      &kp L     &kp SEMI   &kp SQT    &kp RET    &kp PG_UP                              // 14
+&kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N            &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &kp UP     &kp PG_DN                              // 14 
+&kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE  &kp SPACE  &kp RALT  &kp K_CMENU      &kp RCTRL  &kp LEFT   &kp DOWN  &kp RIGHT                                                               // 11
             >;
         };
 
@@ -83,7 +83,7 @@
         extra3 {
             display-name = "Green"; // LAYER 4
             bindings = <
-&none      &kp F1       &kp F2       &kp F3        &kp F4       &kp F5       &kp F6             &kp F7       &kp F8       &kp F9       &kp F10                   &kp F11                   &kp F12         &none        &kp LG(L)          &none      &to 0       // 17
+&none      &kp F1       &kp F2       &kp F3        &kp F4       &kp F5       &kp F6             &kp F7       &kp F8       &kp F9       &kp F10                   &kp F11                   &Send_Zmk         &none        &kp LG(L)          &none      &to 0       // 17
 &none      &kp F13      &kp F14      &kp F15       &kp F16      &kp F17      &kp F18            &kp F19      &kp F20      &kp F21      &kp F22                   &kp F23                   &kp F24           &none                                                // 14
 &kp DEL    &kp Q        &kp UP       &kp E         &kp PG_UP    &none        &none              &none        &none        &none        &none                     &none                     &none             &none        &none                                   // 15
 &kp BSPC   &kp LEFT     &kp DOWN     &kp RIGHT     &kp PG_DN    &none        &none              &none        &none        &none        &none                     &none                     &none             &none                                                // 14
