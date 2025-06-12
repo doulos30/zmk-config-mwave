@@ -19,6 +19,7 @@ macros {
         tap-ms = <1>;
         bindings = <&bt BT_CLR>;
     )
+    
     #include "version.dtsi"
 };
 
