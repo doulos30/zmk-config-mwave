@@ -129,7 +129,6 @@ combos {
         bindings = <&kp ENTER>;
     };
     
-    // New combos to consider
     
     // Backspace combo (U+I)
     combo_bspc {
