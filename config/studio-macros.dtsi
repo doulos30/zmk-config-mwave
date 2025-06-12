@@ -225,7 +225,7 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings = 
-                <&macro_tap &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp ENTER>;
+            <&macro_tap &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp ENTER>;
             display-name = "Git Push";
         };
     };     
