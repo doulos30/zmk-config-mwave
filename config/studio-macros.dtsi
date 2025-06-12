@@ -213,8 +213,7 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings = 
-            <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE 
-                    &kp MINUS &kp M &kp SPACE &kp DQT &kp DQT &kp LEFT>;
+            <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp M &kp SPACE &kp DQT &kp DQT &kp LEFT>;
             display-name = "Git Commit";
         };
 
