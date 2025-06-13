@@ -73,16 +73,16 @@
         };
 
 
-        extra1 {  // layer 2 //  L A S D F   R  j k l ;
+        extra1 {  // layer 2      L A S D F   R  j k l ;
                             //     G A S C      C S A G   
             
             display-name = "Green";
             bindings = <
-                &none      &none          &none          &none            &none         &none    &none      &none           &none           &none               &none        &none      &none     &none  &none  &none  &to 0
-                &none      &none          &none          &none            &none         &none    &none      &none           &none           &none               &none        &none      &none     &none
-                &kp GRAVE  &kp Q          &kp W          &kp E            &kp R         &kp T    &kp Y      &kp U           &kp I           &kp O               &kp P        &kp LBKT   &kp RBKT  &none  &none
-                &kp ESC    &hrm LGUI A    &hrm LALT S    &hrm LSHFT D     &hrm LCTRL F  &lt 3 G  &lt 3 H    &hrm RCTRL J    &hrm RSHFT K    &hrm RALT L         &kp SEMI      &kp SQT   &kp RET   &none
-                &none      &kp Z          &kp X          &kp C            &kp V         &lt 4 B  &lt 4 N    &kp M           &kp COMMA       &hrm K_CMENU DOT    &kp FSLH      &kp BSLH  &none     &none
+                &none      &none          &none          &none            &none         &none    &none      &none           &none           &none               &none         &none      &none     &none  &none  &none  &to 0
+                &none      &none          &none          &none            &none         &none    &none      &none           &none           &none               &none         &none      &none     &none
+                &kp GRAVE  &kp Q          &kp W          &kp E            &kp R         &kp T    &kp Y      &kp U           &kp I           &kp O               &kp P         &kp LBKT   &kp RBKT  &none  &none
+                &kp ESC    &hrm LGUI A    &hrm LALT S    &hrm LSHFT D     &hrm LCTRL F  &lt 3 G  &lt 3 H    &hrm RCTRL J    &hrm RSHFT K    &hrm RALT L         &kp SEMI      &kp SQT    &kp RET   &none
+                &none      &kp Z          &kp X          &kp C            &kp V         &lt 4 B  &lt 4 N    &kp M           &kp COMMA       &hrm K_CMENU DOT    &kp FSLH      &kp BSLH   &none     &none
                 &kp CLCK   &none          &none          &ahrm RET SPACE  &kp SPACE     &none    &none      &none           &none           &none               &none
             >;
         };
