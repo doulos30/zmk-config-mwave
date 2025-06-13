@@ -93,7 +93,7 @@
                 &none  &none  &none  &none  &none      &none   &none       &none      &none         &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS        &kp EQUAL  &kp BACKSPACE
                 &none  &none  &none  &none  &none      &none   &none       &kp N7     &kp N8        &kp N9         &kp KP_MINUS     &none            &none      &none          &kp DELETE
                 &none  &none  &none  &none  &none      &trans  &trans      &kp N4     &kp N5        &kp N6         &kp KP_PLUS      &none            &kp ENTER  &kp PAGE_UP
-                &none  &none  &none  &none  &none      &none   &none       &kp N1     &kp N2        &kp N3         &kp KP_ENTER     &kp RIGHT_SHIFT  &none      &kp PAGE_DOWN
+                &none  &none  &none  &none  &none      &none   &none       &kp N1     &kp N2        &kp N3         &kp KP_ENTER     &none            &none      &kp PAGE_DOWN
                 &none  &none  &to 2  &none  &kp N0     &none   &kp DOT     &none      &none         &none          &none
             >;
         };
