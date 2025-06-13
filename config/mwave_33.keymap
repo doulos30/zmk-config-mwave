@@ -81,7 +81,7 @@
                 &kp GRAVE  &kp Q          &kp W          &kp E            &kp R          &kp T    &kp Y    &kp U          &kp I           &kp O             &kp P         &kp LBKT  &kp RBKT  &none  &none
                 &kp TAB    &fhrm LGUI A   &fhrm LALT S   &fhrm LSHFT D    &fhrm LCTRL F  &lt 3 G  &lt 3 H  &fhrm RCTRL J  &fhrm RSHFT K   &fhrm RALT L      &kp SEMI      &kp SQT   &kp RET   &none
                 &none      &kp Z          &kp X          &kp C            &lt 5 V        &lt 4 B  &lt 4 N  &lt 5 M        &kp COMMA       &hrm K_CMENU DOT  &kp FSLH      &kp BSLH  &none     &none
-                &kp CLCK   &none          &none          &ahrm RET SPACE  &kp SPACE      &none    &none    &none          &none           &none             &none
+                &kp ESC    &none          &none          &ahrm RET SPACE  &kp SPACE      &none    &none    &none          &none           &none             &none
             >;
         };
 
