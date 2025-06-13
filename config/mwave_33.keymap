@@ -86,15 +86,15 @@
         };
 
  
-        extra2 { // layer 3 number layer
+        extra2 {
             display-name = "Blue";
             bindings = <
-                &none  &none  &none  &none  &none      &none   &none       &none      &none         &none          &none            &none            &none      &none          &none       &kp KP_NUMLOCK  &to 0
-                &none  &none  &none  &none  &none      &none   &none       &none      &none         &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS        &kp EQUAL  &kp BACKSPACE
-                &none  &none  &none  &none  &none      &none   &none       &kp N7     &kp N8        &kp N9         &kp KP_MINUS     &none            &none      &none          &kp DELETE
-                &none  &none  &none  &none  &none      &trans  &trans      &kp N4     &kp N5        &kp N6         &kp KP_PLUS      &none            &kp ENTER  &kp PAGE_UP
-                &none  &none  &none  &none  &none      &none   &none       &kp N1     &kp N2        &kp N3         &kp KP_ENTER     &none            &none      &kp PAGE_DOWN
-                &none  &none  &to 2  &none  &kp N0     &none   &kp DOT     &none      &none         &none          &none
+                &none  &none     &none           &none      &none     &none          &none      &none   &none   &none   &none         &none  &none  &none  &none  &none  &to 0
+                &none  &none     &none           &none      &none     &none          &none      &none   &none   &none   &none         &none  &none  &none
+                &none  &none     &kp UP_ARROW    &none      &none     &kp PG_UP      &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &none  &none  &none  &none
+                &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none     &kp PAGE_DOWN  &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp SLASH     &none  &none  &none
+                &none  &none     &none           &none      &kp HOME  &kp END        &kp N0     &kp N1  &kp N2  &kp N3  &kp MINUS     &none  &none  &none
+                &none  &none     &to 2           &none      &none     &none          &kp DOT    &none   &none   &none   &none
             >;
         };
 
@@ -110,16 +110,15 @@
                 &none      &none      &to 3      &kp DELETE  &kp BACKSPACE  &none    &none    &none    &none    &none    &none
             >;
         };
-
         symbol_layer {
             display-name = "Symbols";
             bindings = <
-                &none   &none         &none         &none           &none         &none   &none         &none   &none   &none   &none   &none      &none   &none   &none   &none  &to 0
-                &none   &none         &none         &none           &none         &none   &none         &none   &none   &none   &none   &none      &none   &none
-                &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &trans  &trans  &trans
-                &trans  &none         &none         &none           &none         &none   &none         &none   &none   &none   &none   &none      &trans  &trans
-                &trans  &none         &none         &none           &none         &none   &none         &none   &none   &none   &none   &none      &trans  &trans
-                &trans  &trans        &trans        &kp LSHFT       &kp RSHFT     &trans  &trans        &trans  &trans  &trans  &trans
+                &none  &none            &none          &none      &none       &none        &none      &none          &none             &none                 &none                  &none      &none      &none  &none       &none  &to 0
+                &none  &none            &none          &none      &none       &none        &none      &none          &none             &none                 &none                  &none      &none      &none
+                &none  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE   &none      &none  &kp DELETE
+                &none  &kp GRAVE        &kp TILDE      &none      &none       &none        &kp EQUAL  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH          &kp SLASH  &kp ENTER  &none
+                &none  &kp LESS_THAN    &kp LESS_THAN  &kp EQUAL  &none       &none        &kp MINUS  &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp QUESTION           &none      &none      &none
+                &none  &none            &none          &kp LSHFT  &kp RSHFT   &none        &none      &none          &none             &none                 &none
             >;
         };
     };
