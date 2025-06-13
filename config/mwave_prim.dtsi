@@ -159,9 +159,7 @@ combos {
         key-positions = <38 39>;  // U and I keys
         bindings = <&kp BSPC>;
     };
-    
-  
-    
+
     // Delete combo (Y+U)
     combo_del {
         timeout-ms = <50>;
