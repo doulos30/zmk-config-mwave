@@ -53,6 +53,14 @@ behaviors {
         bindings = <&bt_clear>, <&none>;
         display-name = "BT-hold-clear";
     };
+
+    ht: hold_tap {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "balanced";            // Balanced flavor for stability
+    tapping-term-ms = <200>;        // Adjust tapping term for your typing speed
+    };
+    
     
     // Add just this one simple behavior definition
     hypr: hyper_key {
