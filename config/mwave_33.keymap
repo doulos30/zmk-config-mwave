@@ -80,14 +80,14 @@
         };
 
 
-        extra1 {  // layer 2
+        extra1 {  // layer 2 G A S C 
             display-name = "Green";
             bindings = <
                 &none      &none          &none          &none            &none        &none    &none    &none        &none      &none             &none     &none     &none     &none  &none  &none  &to 0
                 &none      &none          &none          &none            &none        &none    &none    &none        &none      &none             &none     &none     &none     &none
                 &kp GRAVE  &kp Q          &kp W          &kp E            &kp R        &kp T    &kp Y    &kp U        &kp I      &kp O             &kp P     &kp LBKT  &kp RBKT  &none  &none
-                &kp ESC    &fhrm LCTRL A  &fhrm LSHFT S  &fhrm LALT D     &fhrm TAB F  &lt 3 G  &lt 3 H  &ahrm RET J  &kp K      &fhrm RSHFT L     &kp SEMI  &kp SQT   &kp RET   &none
-                &none      &hrm LGUI Z    &kp X          &kp C            &kp V        &lt 4 B  &lt 4 N  &kp M        &kp COMMA  &hrm K_CMENU DOT  &kp FSLH  &kp BSLH  &none     &none
+                &kp ESC    &fhrm LGUI A   &fhrm LALT S   &fhrm LCTRL D    &fhrm TAB F  &lt 3 G  &lt 3 H  &ahrm RET J  &kp K      &fhrm RSHFT L     &kp SEMI  &kp SQT   &kp RET   &none
+                &none      &kp Z    &kp X          &kp C            &kp V        &lt 4 B  &lt 4 N  &kp M        &kp COMMA  &hrm K_CMENU DOT  &kp FSLH  &kp BSLH  &none     &none
                 &kp CLCK   &none          &none          &ahrm RET SPACE  &kp SPACE    &none    &none    &none        &none      &none             &none
             >;
         };
