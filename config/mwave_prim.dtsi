@@ -66,11 +66,12 @@ behaviors {
     hrm: home_row_mods {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
-        flavor = "balanced";
-        tapping-term-ms = <200>;
-        quick-tap-ms = <175>;
-        global-quick-tap;
-        bindings = <&kp>, <&kp>;
+        flavor = "balanced";          // Balanced flavor for stability
+        tapping-term-ms = <250>;      // Increased tapping term for fewer false triggers
+        quick-tap-ms = <175>;         // Quick tap timing for faster taps
+        permissive-hold;              // Allows holds to take precedence when another key is pressed
+        global-quick-tap;             // Ensures quick taps are prioritized globally
+        bindings = <&kp>, <&kp>;      // Key bindings for hold and tap
         display-name = "Home Row Mods";
     };
 
@@ -174,8 +175,6 @@ combos {
         key-positions = <50 51>;  // F and G keys
         bindings = <&kp CAPS>;
     };
-    
-
     
 
 };
