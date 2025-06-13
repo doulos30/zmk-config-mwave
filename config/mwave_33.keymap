@@ -28,7 +28,7 @@
             // -------------------------------------------------------------------------------------------------------
 
                         
-                    // Key Positions Reference mwave33 
+            // Key Positions Reference mwave33 
             //---------------------------------------------------------------------------------
             //Pos	Key	    Pos	Key	    Pos	Key	    Pos	Key	    Pos	Key	    Pos	Key	    Pos	Key
             //---------------------------------------------------------------------------------
@@ -73,9 +73,7 @@
         };
 
 
-        extra1 {  // layer 2      L A S D F   R  j k l ;
-                            //     G A S C      C S A G   
-            
+        extra1 {
             display-name = "Green";
             bindings = <
                 &none      &none          &none          &none            &none         &none    &none      &none           &none           &none               &none         &none      &none     &none  &none  &none  &to 0
@@ -115,4 +113,3 @@
   
     };
 };
-
